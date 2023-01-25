@@ -38,11 +38,11 @@ st.header('Huidige lijst')
 
 
 # if st.button('Haal lijst op'):
-  sheet_url = st.secrets["public_gsheets_url"]
-  rows = run_query(f'SELECT * FROM "{sheet_url}"')
+sheet_url = st.secrets["public_gsheets_url"]
+rows = run_query(f'SELECT * FROM "{sheet_url}"')
  # st.dataframe(rows)
-col1, col2 = st.columns(2)
 for row in rows:
+  col1, col2 = st.columns(2)
   with col1:
     st.write(f{row.winkel)
   with col2:
