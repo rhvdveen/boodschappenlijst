@@ -44,8 +44,8 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 for row in rows:
   col1, col2 = st.columns(2)
   with col1:
-    st.write(f{row.winkel)
+    st.write(f"{row.winkel}")
   with col2:
-    st.write(f{row.product)
+    st.write(f"{row.product}")
 
 st.write("Hello world!")
