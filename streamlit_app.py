@@ -4,7 +4,7 @@ import pandas
 from gsheetsdb import connect
 
 # Create a connection object
-conn = connect()
+#conn = connect()
 
 
 # Perform SQL query on the Google Sheet.
@@ -20,10 +20,8 @@ st.write("Hello world!")
 st.stop()
 
 
-sheet_url = st.secrets["public_gsheets_url"]
-rows = run_query('SELECT * FROM "{sheet_url}"')
-rows2 = run_query(f'SELECT * FROM "{sheet_url}"')
-st.dataframe(rows)
-st.dataframe(rows2)
-
-st.write("Hello world!")
+#sheet_url = st.secrets["public_gsheets_url"]
+#rows = run_query('SELECT * FROM "{sheet_url}"')
+#rows2 = run_query(f'SELECT * FROM "{sheet_url}"')
+#st.dataframe(rows)
+#st.dataframe(rows2)
