@@ -1,6 +1,6 @@
 # main app
 import streamlit as st
-import pandas
+# import pandas
 from gsheetsdb import connect
 
 # Create a connection object
